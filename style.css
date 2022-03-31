@@ -9,6 +9,8 @@ html {
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    line-height: 1;
+    font-weight: 400;
     background-color: #333;
     color: #222;
     overflow-x: hidden;
@@ -41,6 +43,10 @@ body {
     border-radius: 50%;
     position: relative;
     transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
 }
 
 .circle button {
@@ -123,15 +129,25 @@ nav ul li + li + li {
 }
 
 .content h1 {
-    margin: 0;
+    font-size: 3.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
 }
 
 .content small {
     color: #555;
+    font-size: 2rem;
+    font-weight: 500;
     font-style: italic;
 }
 
 .content p {
     color: #333;
+    font-size: 2rem;
     line-height: 1.5;
+    letter-spacing: 0.50px;
 }
